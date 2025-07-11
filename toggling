@@ -1,0 +1,27 @@
+import java.util.*;
+public class first {
+static	int bulb(int x)
+	{
+		int count =0;
+		for(int i=0; i<x; i++)
+		{
+			if (i*i<=x)
+			{
+				count++;
+			}
+			else
+			{
+				break;
+
+			}
+		}
+		return count-1;
+	}
+	public static void main(String [] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter no of bulbs: ");
+		int a = sc.nextInt();
+		System.out.print("No of on bulbs:"+ bulb(a));
+	}
+}
